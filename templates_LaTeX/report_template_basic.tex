@@ -1,0 +1,154 @@
+\documentclass[12pt] {article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[numbers]{natbib} %Bibliography.
+\usepackage{xcolor}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{multirow}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xcolor}
+
+\usepackage{pdfpages}
+
+
+
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage\ of \pageref{LastPage}}
+\rfoot{}
+
+%\rfoot{Handout 1}
+
+%\setcitestyle{numbers} %Cite as numbers or author-year.
+% \bibliographystyle{plain}
+
+
+\begin{document}
+\title{A title}
+\author{F. Lastname}
+\date{\today}
+
+% \maketitle
+% \thispagestype{empty}
+\clearpage\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+An abstract
+\end{abstract}
+
+\newpage
+
+%\setcounter{tocdepth}{2}
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+
+\newpage
+
+% \chapter{start}
+\section{Project Overview}
+Citing nearly all BibTeX field types%  to show what in-line citations and bibliography will look liked (\cite{NIFneutronSources}, \cite{neutronGammaEnvForTheACRR}, \cite{ACRRdiagramSource}, \cite{wsmrPENTRANthesis}, \cite{ToxProfileForUranium}, \cite{TotalXSectionsForFourteenMeVn}, \cite{BCPotentiallyDangerous}, \cite{HighTempPolymers}, \cite{SputteredBCThinFilms}, \cite{MercuryUserGuide}, \cite{LowDriftTypeNForNuclear}, \cite{SummaryOfTCduringAGRExperiments}, \cite{ASTME320M}).
+
+
+\section{Examples}
+Eqn. \ref{exampleequation} is an equation. Fig.\ref{examplefigure} is a figure. Table \ref{exampletable} is a table.
+
+\subsection{Subsection}
+This is a subsection.
+
+\subsubsection{Subsubsection}
+This is a subsubsection. 
+
+This is another paragraph
+
+\begin{equation}\label{exampleequation}
+E = mc^2
+\end{equation}
+
+\begin{table}[h]
+\begin{center}
+\caption{\label{exampletable}Table example.}
+\begin{tabular}{ l c c c c}
+\hline
+\hline
+                            &            ACRR               &           TREAT                  &         WSMR FBR           &         NIF  \\
+
+\hline
+
+Pulse length           &  $\approx$   &  $\approx$  &    $\approx$      &  $\approx$ \\
+\hline
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{figure}[H]
+\begin{center}
+               \includegraphics[width=15cm,keepaspectratio]{report\_examplefig.png}
+               \caption{\label{examplefigure}Figure example.}
+\end{center}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+% \bibliography{bibTemplate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

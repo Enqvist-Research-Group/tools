@@ -1,0 +1,14 @@
+\documentclass{article}
+
+\renewcommand{\abstractname}{Executive Summary}
+
+\begin{document}
+
+\begin{abstract}
+This is your executive summary.
+\end{abstract}
+
+\section{Introduction}
+This is your introduction.
+
+\end{document}

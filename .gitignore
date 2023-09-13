@@ -1,0 +1,16 @@
+
+# Python caches
+*.pyc
+
+# LaTeX caches
+*.synctex
+
+# MATLAB autosave
+*.m~
+
+#Simulink autosave
+.autosave
+
+# Simulink cache
+.slxc
+

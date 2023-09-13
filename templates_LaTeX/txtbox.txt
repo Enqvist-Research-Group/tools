@@ -1,0 +1,30 @@
+\documentclass{article}
+
+\title{Your Title}
+\author{Your Name}
+\date{\today}
+
+\makeatletter         
+\def\@maketitle{
+\begin{center}
+{\Huge \@title}\\[4ex] 
+{\Large \@author}\\[4ex] 
+\@date\\[8ex]
+
+\noindent\fbox{%
+    \begin{minipage}{\textwidth}
+    This is a text box. You can put any text you want here, and LaTeX will ensure it is presented nicely.
+    \end{minipage}
+}
+\end{center}}
+\makeatother
+
+\begin{document}
+
+\maketitle
+
+% Continue with the rest of your document
+\section{Introduction}
+Your introduction goes here.
+
+\end{document}

@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy} % Set the overall page style to fancy
+\fancyhf{} % Clear the header and footer
+\fancyhead[C]{My Fancy Header} % Set the header
+\fancyfoot[C]{\thepage} % Set the footer to show the page number
+\renewcommand{\headrulewidth}{0.4pt} % Set the header rule line width
+\renewcommand{\footrulewidth}{0.4pt} % Set the footer rule line width
+
+% Redefine the plain page style
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyhead[C]{My Fancy Header on First Page}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+}
+
+\begin{document}
+
+\title{My Title}
+\author{My Name}
+
+\maketitle
+
+% Rest of your document goes here
+
+\end{document}
